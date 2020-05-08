@@ -83,7 +83,8 @@
             Nframe.style.position = "relative";
         }
     };
-
+    
+    //main function that creates the button and inserts it into the dom
     function isLoaded(){
 
         btn = document.createElement("button");
@@ -93,6 +94,7 @@
 
         Ntopbar.insertBefore(btn, Ntopbar.firstChild);
 
+        // sets the onclick function for the button. 
         btn.onclick = function(){
             vizsidebar();
         };
